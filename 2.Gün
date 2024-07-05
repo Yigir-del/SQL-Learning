@@ -27,3 +27,16 @@ bu şekilde içinde a geçen tüm kitapları sorgularız.
 %a% tüm kitap adları içindeki a karakterini arar.
 a% kitap adlarının a ile başlamasını arar.
 %a kitap adlarının a ile bitmesini arar.
+
+İnsert 
+-------
+olmayan bir satırı oluşturmak için kukllanılıyor.
+//insert into (TabloAdı) values(veriler)
+
+//insert into Kitap values(7,'Yigitin düşleri','yigit',220,30,'2024-07-05','günaydın')
+Bu şekilde 7. sıraya tüm veri tülerini doldurarak yeni bir kitap ekleyebiliriz.
+
+bazı verileri bilmiyosam  şu şekilde kullanılır.
+//insert into tabloadı (alanlar) values(veriler)
+//insert into Kitap (KitapNo,KitapAd , KitapYazar , KitapSayfa , KitapTarih , KitapYayınevi) values(8,'Yigitin düşüşleri','yigit',220,'2024-07-05','günaydın')
+
