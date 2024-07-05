@@ -1,0 +1,10 @@
+DML Kodlarına geçiş yapıyoruz bu kodlar biraz daha elimizdeki verileri seçip onlarla oynamak üzerine.
+
+Select
+-------
+select * from ogr  -----> bu şekilde ogr  tablosundan select komutu yardımı ile verileri seçiyoruz *  sembolü tümü anlamına geliyor yani tüm veriler türlerini çekiyoruz.
+select OgrNumara , OgrTC from ogr -----> bu şekilde ise ogr tablosundaki numara ve tc leri sorugulatıyoruz yani sadece 2 sinin verilerini çekiyoruz.
+
+Where 
+--------
+select * from Kitap where  KitapSayfa < 200 -----> bu şekilde  sayfa sayısı 200 den küçük kitapları sorgulatabiliyoruz.
