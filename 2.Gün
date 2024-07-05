@@ -2,9 +2,28 @@ DML Kodlarına geçiş yapıyoruz bu kodlar biraz daha elimizdeki verileri seçi
 
 Select
 -------
-select * from ogr  -----> bu şekilde ogr  tablosundan select komutu yardımı ile verileri seçiyoruz *  sembolü tümü anlamına geliyor yani tüm veriler türlerini çekiyoruz.
-select OgrNumara , OgrTC from ogr -----> bu şekilde ise ogr tablosundaki numara ve tc leri sorugulatıyoruz yani sadece 2 sinin verilerini çekiyoruz.
+//select * from ogr  
+bu şekilde ogr  tablosundan select komutu yardımı ile verileri seçiyoruz *  sembolü tümü anlamına geliyor yani tüm veriler türlerini çekiyoruz.
+
+//select OgrNumara , OgrTC from ogr 
+bu şekilde ise ogr tablosundaki numara ve tc leri sorugulatıyoruz yani sadece 2 sinin verilerini çekiyoruz.
 
 Where 
 --------
-select * from Kitap where  KitapSayfa < 200 -----> bu şekilde  sayfa sayısı 200 den küçük kitapları sorgulatabiliyoruz.
+//select * from Kitap where  KitapSayfa < 200 
+bu şekilde  sayfa sayısı 200 den küçük kitapları sorgulatabiliyoruz.
+
+//select * from Kitap where KitapSayfa <210 and KitapFiyat > 8 
+bu şekilde sayfa sayısı 210 dan küçük fiyatı 8 den büyük kitapları  sorgulayabiliyoruz.
+normal programlama dillerinde olduğu gibi burdada (and  or) ifadeleri mevcut ve kulllanımları aynı.
+
+//select * from Kitap where KitapSayfa in(210,200,234) and KitapFiyat in(4,5,6,7)
+bu şekilde ise  sayfa sayısı ( 210 200 234 ) herhangi birisi olan kitapları sorguluyor  ve bağlacı ile fiyatı (4,5,6,7) den biri olanları sorguluyor ve ortak  olanları getiriyor.
+in =  içinden demek
+
+//select * from Kitap where KitapAd like '%a%' 
+bu şekilde içinde a geçen tüm kitapları sorgularız.
+
+%a% tüm kitap adları içindeki a karakterini arar.
+a% kitap adlarının a ile başlamasını arar.
+%a kitap adlarının a ile bitmesini arar.
