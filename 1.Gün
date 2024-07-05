@@ -30,8 +30,11 @@ DDL kodları yardmı ile database oluşturup altına bir table ekleyebiliriz üs
 
 CREATE
 ---------
-create database  okul  ----> new query  diyip bu kod sayesinde okul adı verilen bir database oluşturabiliriz.
-use okul ------>  diyerek okul database inin içinde işlem yapıcağımızı belirtiyoruz
+create database  okul 
+new query  diyip bu kod sayesinde okul adı verilen bir database oluşturabiliriz.
+
+use okul 
+diyerek okul database inin içinde işlem yapıcağımızı belirtiyoruz
 
 create table gor(
 GroBoy char(10),
@@ -40,15 +43,20 @@ GroBilgi text)
 
 ALTER
 -------
-alter table ogr add BaslamaTarih smalldatetime, OgrMahalle varchar(40) -----------> bu şekilde sonradan tablomuza veri ekleyebiliriz aynı ada sahip 2 veri olamaz yani 2 tane OgrBilgi olamaz.
+alter table ogr add BaslamaTarih smalldatetime, OgrMahalle varchar(40) 
+bu şekilde sonradan tablomuza veri ekleyebiliriz aynı ada sahip 2 veri olamaz yani 2 tane OgrBilgi olamaz.
 
-alter table ogr alter column notlar smallint ---------> bu şekilde ise bir veri türünün herhangi türden(varchar,char,text,imagine) smallinte dönüştürülmesi gösteriliyor.
+alter table ogr alter column notlar smallint 
+bu şekilde ise bir veri türünün herhangi türden(varchar,char,text,imagine) smallinte dönüştürülmesi gösteriliyor.
 column ----> 'sütun,alan'
 
 DROP
 -------
-drop table ogr2 -----> bu şekilde ogr2 adlı tabloyu komple silebiliriz.
+drop table ogr2 
+bu şekilde ogr2 adlı tabloyu komple silebiliriz.
 
-alter table ogr drop column BaslamaTarih-------->bu şekilde ise alter table ogr diyerek ogr tablosundan bir şeyi değiştireceğimizi belirtip drop column diyerek silmek istediğimiz alanı seçiyoruz.
+alter table ogr drop column BaslamaTarih
+bu şekilde ise alter table ogr diyerek ogr tablosundan bir şeyi değiştireceğimizi belirtip drop column diyerek silmek istediğimiz alanı seçiyoruz.
 
-truncate table ogr ------> ogr tablosunun içindeki benim girdiğim bilgilerin hepsini siler.
+truncate table ogr
+ogr tablosunun içindeki benim girdiğim bilgilerin hepsini siler.
