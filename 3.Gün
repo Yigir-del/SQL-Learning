@@ -18,3 +18,22 @@ Bu şekilde bir tabloya seri veri eklemesi yapabiliriz.
 
 //SELECT * FROM Ark WHERE ArkAd LIKE 'B___r';
 Bu şekilde B ile başlayıp r ile biten tüm verileri sorgularız.
+
+
+Update
+---------
+//update tabloadı set alanadı = "yeni değer" where şart
+
+//update Kitap set KitapYazar = 'Dostoyevski',KitapFiyat = 32 WHERE KitapAd = 'totor'
+Bu şekilde kitap adı 'totor' olan tüm kitapların yazarı Dostoyevski ve fiyatı 32 olur.
+
+//update Kitap set KitapFiyat = 4 where KitapFiyat <= 5
+Bu şekilde kitap fiyatı 5 ten küçükleri 4 e eşitleriz.
+
+//update Kitap set KitapFiyat = KitapFiyat * 120 / 100 where KitapFiyat <= 10
+Bu şekilde fiyatı 10a eşit ve düşük olanları %20 zamlandırırız.
+
+UPDATE Kitap 
+SET KitapFiyat = KitapFiyat * 1.20 
+WHERE KitapFiyat <= 10 AND Yazar = 'Ahmet';
+Bu da farklı bir gösterim.
