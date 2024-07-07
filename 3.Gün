@@ -8,3 +8,13 @@ values
 (6,'Kübra',172,1,3,7)
 
 Bu şekilde bir tabloya seri veri eklemesi yapabiliriz.
+
+
+'_' Joker Karakteri: Tam olarak bir karakteri temsil eder.
+
+Örneğin: LIKE 'a_' - 'a' ile başlayan ve ardından herhangi bir tek karakter gelen metinleri içerir.
+Örneğin: LIKE '_a' - herhangi bir tek karakterle başlayan ve ardından 'a' gelen metinleri içerir.
+Örneğin: LIKE 'a_' - tam iki karakterli ve 'a' ile başlayan metinleri içerir.
+
+//SELECT * FROM Ark WHERE ArkAd LIKE 'B___r';
+Bu şekilde B ile başlayıp r ile biten tüm verileri sorgularız.
