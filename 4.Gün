@@ -1,1 +1,9 @@
 
+SELECT * FROM Ale WHERE AleAd LIKE 'Y____ __e' sorgusu, AleSad sütunundaki değerlerin belirli bir şablona uyanları seçer. Bu şablona göre:
+
+AleSad sütununun değeri "Y" harfiyle başlamalıdır.
+"Y" harfinden sonra 4 adet karakter bulunmalıdır (herhangi bir karakter olabilir).
+Sonra bir boşluk karakteri gelmelidir.
+Boşluktan sonra 2 adet karakter bulunmalıdır.
+En sonda "e" harfi bulunmalıdır.
+Bu gibi bir sorgu için başka örnekler vermek gerekirse, eğer AleSad sütununda Yusuf Doe veya Yeliz Ale gibi değerler varsa, bu sorgu bu değerleri seçecektir.
