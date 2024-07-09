@@ -7,3 +7,10 @@ Sonra bir boşluk karakteri gelmelidir.
 Boşluktan sonra 2 adet karakter bulunmalıdır.
 En sonda "e" harfi bulunmalıdır.
 Bu gibi bir sorgu için başka örnekler vermek gerekirse, eğer AleSad sütununda Yusuf Doe veya Yeliz Ale gibi değerler varsa, bu sorgu bu değerleri seçecektir.
+
+Evet, SQL'de UPDATE komutunu kullanarak bir tabloyu güncellerken önce hangi tabloyu güncelleyeceğimizi belirtiriz, ardından hangi sütunların güncellenmesi gerektiğini belirleriz. SET ifadesi burada devreye girer.
+
+UPDATE Komutunun Yapısı
+1//UPDATE Tablo Adı: Hangi tabloyu güncelleyeceğimizi belirtiriz.
+2//SET: Güncellemek istediğimiz sütunu ve yeni değerini belirtiriz.
+3//WHERE: Güncellenmesi gereken belirli kayıtları seçmek için koşul belirleriz (isteğe bağlı).
