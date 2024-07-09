@@ -14,3 +14,53 @@ UPDATE Komutunun Yapısı
 1//UPDATE Tablo Adı: Hangi tabloyu güncelleyeceğimizi belirtiriz.
 2//SET: Güncellemek istediğimiz sütunu ve yeni değerini belirtiriz.
 3//WHERE: Güncellenmesi gereken belirli kayıtları seçmek için koşul belirleriz (isteğe bağlı).
+
+DELETE
+-------
+//Delete from TabloAdı
+Normal çalışma şekli budur ama where ile  koşul ekleyebiliriz.
+Örn/
+    //delete from Kitap where KitapSayfa > 500 
+sayfa sayısı 500 den büyük olan kitapları siler.
+
+Örn/
+  //DELETE FROM kullanıcılar
+  //WHERE yaş > 30;
+
+*DML komutları bitti*
+
+Distinct
+---------
+Tekrarlı verilerin sadece 1 tanesinin seçilmesi ve diğer tüm verilerin  (Default) alfabetik sıraya geçmesini sağlar
+//Select discint VeriAdı from TabloAdı
+
+Örn/
+   //SELECT DISTINCT şehir
+   //FROM müşteriler;
+
+Order by
+----------
+Sıralama işleri için kullanıcağımız komuttur.
+//Select * from TabloAdı order by VeriAdı (asc,desc)  (Default olarak asc dir)
+asc: küçükten büyüğe, 
+desc: büyükten küçüğe  sıralar.
+
+//select * from TabloAdı order by VeriAdı ,VeriAdı desc 
+Bu şekilde önce veri adına göre sıralar sonra da eğer aynı veri adları varsa kendi içlerince 2.  veri adına göre sıralar.
+
+//SELECT *
+//FROM tablo_adı
+//ORDER BY sütun1 ASC, sütun2 DESC;
+
+İlk olarak sütun1 ASC (artan) sıraya göre sıralanır. Yani, sütun1 değerleri küçükten büyüğe doğru sıralanır.
+Eğer sütun1 değerleri aynı ise, bu durumda sütun2 DESC (azalan) sıraya göre sıralanır. Yani, sütun1 değerleri eşit olan satırlar içinde sütun2 değerleri büyükten küçüğe doğru sıralanır.
+
+
+
+
+
+
+
+
+
+
