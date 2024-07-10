@@ -1,1 +1,12 @@
+As
+----
+As komutu veri adlarına takma isim takıp listelemek gibi bir işleve sahip.
 
+//select VeriAdı as 'TakmaAd' from TabloAdı
+Örn/
+   //select KitapFiyat as 'KitapUcreti', KitapAd as 'Kitap İsim' from Kitap
+
+Bu şekilde KitapFiyat ı KitapUcreti adı altında toplamış oluruz, KitapAdı da aynı şekilde.
+
+Örn/
+   //select KitapFiyat, KitapFiyat+2 as 'KitapYeni' from Kitap
