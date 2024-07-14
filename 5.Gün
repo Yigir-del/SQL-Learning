@@ -10,3 +10,31 @@ Bu şekilde KitapFiyat ı KitapUcreti adı altında toplamış oluruz, KitapAdı
 
 Örn/
    //select KitapFiyat, KitapFiyat+2 as 'KitapYeni' from Kitap
+
+
+
+Primary Key ve Unique Key SQL veritabanlarında kullanılan iki farklı kısıt türüdür. Aralarındaki temel farklar şunlardır:
+
+Primary Key (Birincil Anahtar):
+1-Tekillik: Bir tablo içinde bir sütun ya da sütun kombinasyonu için birincil anahtar tanımlanabilir ve bu anahtarın her değeri benzersiz olmalıdır. Yani, birincil anahtar sütununda yinelenen (duplicate) değerler olamaz.
+2-Boş Değerler: Birincil anahtar sütunları boş (null) değer içeremez.
+3-Bir Tablo Başına Bir Tane: Her tabloda yalnızca bir birincil anahtar olabilir.
+4-Birleştirilmiş Anahtarlar: Birincil anahtar birden fazla sütundan oluşabilir (birleşik anahtar).
+
+Unique Key (Tekil Anahtar):
+1-Tekillik: Bir tablo içinde bir sütun ya da sütun kombinasyonu için unique anahtar tanımlanabilir ve bu anahtarın her değeri benzersiz olmalıdır. Bir sütunda birden fazla unique anahtar olabilir.
+2-Boş Değerler: Unique anahtar sütunları boş (null) değer içerebilir, fakat her sütun için yalnızca bir null değeri olabilir.
+3-Bir Tablo Başına Birden Fazla: Bir tablo içinde birden fazla unique anahtar olabilir.
+
+-- Primary Key
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY, -- Her StudentID benzersiz ve boş olamaz
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50)
+);
+
+-- Unique Key
+CREATE TABLE Teachers (
+    TeacherID INT UNIQUE, -- Her TeacherID benzersiz, ancak boş olabilir
+    Email VARCHAR(100) UNIQUE -- Her Email benzersiz olmalıdır
+);
