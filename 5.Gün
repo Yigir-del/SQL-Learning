@@ -38,3 +38,21 @@ CREATE TABLE Teachers (
     TeacherID INT UNIQUE, -- Her TeacherID benzersiz, ancak boş olabilir
     Email VARCHAR(100) UNIQUE -- Her Email benzersiz olmalıdır
 );
+
+
+Yani ben  herkesin adı farkı olsun ve herkesin adı olsun istiyorsam orda primary key.
+Herkesin numarası farklı olsun ama numaraları olmasada olur diyosam unique.
+
+
+Diyelimki  
+delete FROM table_name  Where some_column = some_value
+burda  some _column'u   some_value olanları silicek değil mi peki buna bir limit koyamazmıyız meslea ilk 5 i.
+Evet koyabiliriz.
+
+
+DELETE FROM table_name
+WHERE some_column = some_value
+LIMIT 5;
+
+
+
