@@ -55,4 +55,14 @@ WHERE some_column = some_value
 LIMIT 5;
 
 
+Constraints 
+-------------
+CREATE TABLE awards(
+id integer PRIMARY KEY,
+recipient TEXT NOT NULL,
+award_name TEXT DEFAULT 'Grammy'
+);
+
+Not null boş bırakılamayacağı anlamına gelir
+Default ise adı üstünde default bir değer atar.
 
