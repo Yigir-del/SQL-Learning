@@ -1,1 +1,101 @@
+Between
+--------
+BETWEEN Operatörü:
+BETWEEN operatörü alfabetik sıralamaya göre çalışır ve belirli bir aralık içindeki değerleri seçer.
+
+
+/*
+CREATE TABLE Example (
+    name VARCHAR(100)
+);
+
+INSERT INTO Example (name) VALUES
+('Alice'),
+('Aaron'),
+('Avery'),
+('Brian'),
+('Bella'),
+('Catherine'),
+('Charlie'),
+('Aalper');
+*/
+Bu tabloda aşağıdaki kod bloğunu çalıştırırsam:
+SELECT * FROM Example
+WHERE name BETWEEN 'A' AND 'B';
+
+Aalper
+Aaron
+Alice
+Avery
+Brian
+Bella
+Sonucunu verir.
+
+
+Else - Case - Then - End as
+---------------------------------
+select  name,
+  case
+    when genre = 'romance' then 'Chill'
+    when genre = 'comedy'  then 'Chill'
+    else 'Intense'
+    END AS ' MOOD'
+FROM movies;
+
+
+1-SELECT ile sorgulayacağımız sütunları seçiyoruz.
+2-CASE ifadesiyle koşullu mantık ekliyoruz.
+3-WHEN ile belirli koşulları kontrol ediyoruz. Bu koşullar sağlanıyorsa,
+4-THEN ile belirli bir değeri döndürüyoruz.
+5-ELSE ile hiçbir koşul sağlanmadığında döndürülecek varsayılan değeri belirliyoruz.
+6-END ile CASE ifadesini sonlandırıyoruz ve AS ile bu sütuna bir takma ad veriyoruz.
+
+
+/*
+SELECT employee_id, salary,
+CASE
+    WHEN salary > 100000 THEN 'High Tax Bracket'
+    WHEN salary > 50000 THEN 'Medium Tax Bracket'
+    ELSE 'Low Tax Bracket'
+END AS tax_bracket
+FROM employees;
+*/
+
+Açıklama:
+  *SELECT employee_id, salary*:
+  Çalışanların ID ve maaş sütunlarını seçiyoruz.
+    *CASE*:
+    Koşullu mantık eklemeye başlıyoruz.
+      *WHEN salary > 100000 THEN 'High Tax Bracket'*:
+      Maaşı 100,000'den büyük olan çalışanlar için 'High Tax Bracket' değeri döndürülüyor.
+         *WHEN salary > 50000 THEN 'Medium Tax Bracket'*:
+         Maaşı 50,000'den büyük olan (ancak 100,000'den küçük veya eşit olan) çalışanlar için 'Medium Tax Bracket' değeri döndürülüyor.
+           *ELSE 'Low Tax Bracket'*:
+           Yukarıdaki koşullardan hiçbirini sağlamayan çalışanlar için 'Low Tax Bracket' değeri döndürülüyor.
+             *END AS tax_bracket*:
+             CASE ifadesini sonlandırıyoruz ve bu sütuna 'tax_bracket' adını veriyoruz.
+                                Bu şekilde, sorgu sonucunda her çalışanın vergi dilimini belirlemiş oluyoruz.
+
+
+
+
+Özetleyelim:
+
+SELECT: bir veritabanından her bilgi sorgulamak istediğimizde kullandığımız cümledir.
+AS: Sütunu veya tabloyu yeniden adlandırır.
+DISTINCT: benzersiz değerler döndürür.
+WHERE:  belirttiğiniz koşullara göre sorgunun sonuçlarını filtrelemenize olanak tanıyan popüler bir komuttur.
+LIKE ve BETWEEN: özel operatörlerdir.
+AND ve OR: birden fazla koşulu birleştirir.
+ORDER BY: sonucu sıralar.
+LIMIT: Sorgunun döndüreceği en fazla satır sayısını belirtir.
+CASE: farklı çıktılar oluşturur.
+
+
+
+
+
+
+
+
 
